@@ -1,0 +1,37 @@
+#container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    'hd hd hd'
+    'nav nav nav'
+    'mn mn mn'
+    'mn mn mn'
+    'mn mn mn'
+    ;
+}
+
+/* Duplicera alla kommer ha samma struktur */
+#bok{
+    display: grid;
+    width: 5vw;
+    height: 5vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas: 
+    'img'
+    'h3'
+    ;
+}
+
+
+/* Sida 1 index css */
+#mainhead{
+
+}
+
+#logo{
+
+}
