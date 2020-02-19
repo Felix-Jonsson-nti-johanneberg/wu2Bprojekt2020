@@ -1,23 +1,162 @@
 #container{
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    overflow: scroll;
+    width: 95vw;
+    height: 200vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.2fr 2fr 2fr 2fr;
+    grid-template-rows: 0.1fr 0.25fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     'hd hd hd'
     'nav nav nav'
     'mn mn mn'
-    'mn mn mn'
-    'mn mn mn'
+    'mn2 mn2 mn2'
+    'mn3 mn3 mn3'
+    'mn4 mn4 mn4'
+    'mn5 mn5 mn5'
     ;
 }
 
-/* Duplicera alla kommer ha samma struktur */
-#bok{
+
+/* Sida 1 index css */
+/* header css */
+#mainhead{
+  grid-area: hd;
+  display: flex;
+}
+
+#logo{
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120%;
+}
+
+#menu{
+    flex: 1;
+}
+
+#search{
+  flex: 1;
+}
+
+/* Nav css */
+.MainNav{
+    grid-area: nav;
+    display: flex;
+}
+
+.navigation{
+    flex: 1;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 8px;
+    border-color: rgb(0, 0, 0);opacity: 0.7;
+    color: #FFFFFF;
+    background-color: #716F6F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main css */
+/* Row 1 */
+.MainBokRow{
+    grid-area: mn;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+/* Row 2 */
+.MainBokRow2{
+    grid-area: mn2;
+    display: flex;
+    justify-content: space-around;   
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+
+/* Row 3 */
+.MainBokRow3{
+    grid-area: mn3;
+    display: flex;
+    justify-content: space-around;   
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+/* Row 4 */
+.MainBokRow4{
+    grid-area: mn4;
+    display: flex;
+    justify-content: space-around;   
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+/* Row 5 */
+.MainBokRow5{
+    grid-area: mn5;
+    display: flex;
+    justify-content: space-around;   
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+
+/* Duplicera alla kommer ha samma struktur i mn*/
+.bok{
     display: grid;
-    width: 5vw;
-    height: 5vh;
+    height: 25vh;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr;
     grid-template-areas: 
@@ -26,12 +165,10 @@
     ;
 }
 
-
-/* Sida 1 index css */
-#mainhead{
-
+.titel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#logo{
-
+#sorttext{
+    
 }
