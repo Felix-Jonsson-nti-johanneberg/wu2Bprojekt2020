@@ -1,7 +1,13 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
 #container{
     display: grid;
     overflow: scroll;
-    width: 95vw;
+    background-color: black;
+    width: 100vw;
     height: 200vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.25fr 1fr 1fr 1fr 1fr 1fr;
@@ -18,16 +24,19 @@
 
 
 /* Sida 1 index css */
-/* header css */
+/* Header css */
 #mainhead{
   grid-area: hd;
   display: flex;
+  background-color: #272727;
 }
 
 #logo{
     flex: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
+    color: white;
+    margin-left: 15vw;
 }
 
 #menu{
@@ -49,10 +58,18 @@
     border-style: solid;
     border-width: 5px;
     border-radius: 8px;
-    border-color: rgb(0, 0, 0);opacity: 0.7;
+    height: 60%;
+    border-color: #595959;
     color: #FFFFFF;
     background-color: #716F6F;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#firstnav.navigation{
+    border-color: #75F561;
+    color: #75F561;
+    background-color: #504E4E;
 }
 
 /* Main css */
@@ -61,6 +78,7 @@
     grid-area: mn;
     display: flex;
     justify-content: space-around;
+    margin-top: 12vh;
 }
 
 #bok1{
@@ -80,6 +98,7 @@
     grid-area: mn2;
     display: flex;
     justify-content: space-around;   
+    margin-top: 12vh;
 }
 
 #bok1{
@@ -100,6 +119,7 @@
     grid-area: mn3;
     display: flex;
     justify-content: space-around;   
+    margin-top: 12vh;
 }
 
 #bok1{
@@ -119,6 +139,7 @@
     grid-area: mn4;
     display: flex;
     justify-content: space-around;   
+    margin-top: 12vh;
 }
 
 #bok1{
@@ -138,6 +159,7 @@
     grid-area: mn5;
     display: flex;
     justify-content: space-around;   
+    margin-top: 12vh;
 }
 
 #bok1{
@@ -157,6 +179,7 @@
 .bok{
     display: grid;
     height: 25vh;
+    color: white;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr;
     grid-template-areas: 
@@ -167,8 +190,16 @@
 
 .titel{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: small;
+    border-color: #595959;
+    background-color: #716F6F;
+    text-align: center;
 }
 
 #sorttext{
-    
+    grid-area: mn;
+    color: white;
 }
