@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="container">
@@ -16,12 +17,12 @@
             <img id="search" src="" alt="search">
         </header>
         <div class="MainNav">
-            <nav class="navigation" id="firstnav">Alla Böcker</nav>
-            <nav class="navigation">Favoriter</nav>
-            <nav class="navigation">Senaste</nav>
+            <nav class="navigation selected" id="firstnav">Alla Böcker</nav>
+            <nav class="navigation" id="secondnav">Favoriter</nav>
+            <nav class="navigation" id="thirdnav">Senaste</nav>
         </div>
+        <h2 id="sorttext">sortera</h2> 
         <main class="MainBokRow">
-            <h2 id="sorttext">sortera</h2> 
             <div class="bok">
                 <img src="" alt="bild av bok1">
                 <h3 class="titel">titel av bok1</h3>
@@ -93,4 +94,5 @@
             </main>   
         </div>
     </body>
+    <script src="js/scripts.js"></script>
 </html>
