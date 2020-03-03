@@ -10,18 +10,71 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <header id="mainhead">
             <img id="menu" src="" alt="meny">
             <h1 id="logo">Logo</h1>
             <img id="search" src="" alt="search">
         </header>
+        <div class="menu">
+            <header class="profilepic">
+                <img src="" alt="Profilepic">
+                <p class="menu-header">Name</p>
+                <article id="date">
+                    <p class="menu-header">3må 2d</p>
+                    <img src="" alt="smallcake">
+                </article>
+                <article id="booksread">
+                    <p class="menu-header">101 Lästa</p>
+                </article>
+            </header>
+            <article class="menu-design">Profil</article>
+                <img src="" alt="guy">
+                <p class="profile-setting-font">Mina Publiceringar</p>
+                <p class="profile-setting">Historik</p>
+                <p class="profile-setting">Logga ut</p>
+            <article class="menu-design">Inställningar</article>
+                <div id="settingspic">
+                    <img src="" alt="cogwheel">
+                </div>
+                <div id="language">
+                    <p class="profile-setting-font">Språk för app</p>
+                    <img src="" alt="UKflag">
+                    <img src="" alt="SWEflag">
+                </div>
+                <div id="notifs">
+                    <p class="profile-setting-font">Notifikationer</p>
+                    <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                    </label>
+                </div>
+                <div id="show-nsfw">
+                    <p class="profile-setting-font">Visa NSFW</p>
+                    <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                    </label>
+                </div>
+                <div id="darkmode">
+                    <p class="profile-setting-font">Mörkt läge</p>
+                    <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                    </label>
+                </div>
+            <article class="menu-design">Annat</article>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="fade-layer"></div>
         <div class="MainNav">
             <nav class="navigation selected" id="firstnav">Alla Böcker</nav>
             <nav class="navigation" id="secondnav">Favoriter</nav>
             <nav class="navigation" id="thirdnav">Senaste</nav>
         </div>
-        <h2 id="sorttext">sortera</h2> 
+        <h2 id="sorttext">Sortera:</h2> 
         <main class="MainBokRow">
             <div class="bok">
                 <img src="" alt="bild av bok1">
