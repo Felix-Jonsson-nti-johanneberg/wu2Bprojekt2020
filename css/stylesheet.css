@@ -42,10 +42,14 @@ html, body {
 
 #menu{
     flex: 1;
+    width: 55px;
+    height: 60px;
 }
 
 #search{
   flex: 1;
+  width: 55px;
+  height: 55px;
 }
 
  /* Menu js */
@@ -71,31 +75,141 @@ html, body {
     height: 100vh;
     width: 65vw;
     background-color: #272727;
+    display: grid;
     position: fixed;
     color: white;
     top: 0;
     left: -65vw;
     transition: left 0.2s;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.8fr 1fr 1fr 0.8fr;
+    grid-template-rows: 0.6fr 0.2fr 1fr 1fr 0.8fr;
     grid-template-areas: 
     'hdm hdm'
+    'hdm2 hdm2'
     'art art'
     'art2 art2'
     'art3 art3';
     z-index: 7;
-    ;
+    /* temporary scroll */
+    overflow: scroll;
 }
 .show{
     left: 0;
+}
+
+.upper-line{
+    width: 200px;
+    border-top: 1.2px solid white;
+    grid-area: hd;
+    opacity: 0.8;
+}
+
+.main-line{
+    border-top: 1.2px solid white;
+    margin-right: 2.2rem;
+    opacity: 0.9;
+}
+
+/* first top menu css*/
+.userpic{
+    grid-area: hdm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top-info{
+    grid-area: hdm2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 24px;
+}
+
+#username{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pic-margin{
+    margin: auto;
+}
+
+.info-header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid 1px white;
+    width: 150%;
+}
+
+.seperating-line{
+    border-left: 0.6px solid whitesmoke;
+    opacity: 0.5;
+    height: 2.7rem;
+    margin-top: 5%;
+}
+
+/*second menu css Profile settings */
+
+.profile-grid{
+    grid-area: art;
+    margin-left: 20px;
+}
+
+.menu-design{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-setting-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-small-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* third menu css Settings settings */
+
+.setting-grid{
+    grid-area: art2;
+    margin-left: 20px;
+}
+
+.setting-icon{
+    width: 40px;
+    height: 40px;
+}
+
+#notifs{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+#darkmode{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 24px;
+    padding-right: 30px;
+}
+
+.switch2{
+    left: 21px;
+}
+
+/* last menu css Other */
+.other-grid{
+    grid-area: art3;
+    margin-left: 20px;
 }
 
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 25px;
   }
   
   /* Hide default HTML checkbox */
@@ -105,7 +219,7 @@ html, body {
     height: 0;
   }
   
-  /* The slider */
+  /* The slider checkbox*/
   .slider {
     position: absolute;
     cursor: pointer;
@@ -118,24 +232,27 @@ html, body {
     transition: .4s;
   }
   
+  /* head */
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 3px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
-  }
+    background-color: grey;
+    border-style: solid;
+    border-color: white;  
+}
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px white;
   }
   
   input:checked + .slider:before {
@@ -144,15 +261,21 @@ html, body {
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
+  /* Rounded sliders body border */
   .slider.round {
     border-radius: 34px;
+    border-style: solid;    
   }
   
+  /* head border */
   .slider.round:before {
     border-radius: 50%;
+    top: 2px;
   }
 
+.switch-margin{
+    margin-top: 1rem;
+}
 
 /* Nav css */
 .MainNav{

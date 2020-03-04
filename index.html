@@ -12,62 +12,75 @@
 <body>
     <div class="container">
         <header id="mainhead">
-            <img id="menu" src="" alt="meny">
+            <img id="menu" src="img/menu-24px.svg" alt="meny">
             <h1 id="logo">Logo</h1>
-            <img id="search" src="" alt="search">
+            <img id="search" src="img/search-24px.svg" alt="search">
         </header>
         <div class="menu">
-            <header class="profilepic">
-                <img src="" alt="Profilepic">
-                <p class="menu-header">Name</p>
-                <article id="date">
-                    <p class="menu-header">3må 2d</p>
-                    <img src="" alt="smallcake">
-                </article>
-                <article id="booksread">
-                    <p class="menu-header">101 Lästa</p>
-                </article>
+            <header class="userpic">
+                <div class="top-menu-margin">
+                    <img src="" alt="userpic">
+                    <p id="username">Name</p>
+                </div>
+                <hr class="upper-line">
             </header>
-            <article class="menu-design">Profil</article>
+            <div class="top-info">
+                <p class="info-header">3må 2d</p>
+                <img src="" alt="smallcake">
+                <hr class="seperating-line">
+                <p class="info-header">101 Lästa</p>
+                <img src="" alt="book">
+            </div>
+            <article class="menu-design profile-grid">Profil
                 <img src="" alt="guy">
-                <p class="profile-setting-font">Mina Publiceringar</p>
-                <p class="profile-setting">Historik</p>
-                <p class="profile-setting">Logga ut</p>
-            <article class="menu-design">Inställningar</article>
+                <hr class="main-line">
+                <p class="menu-small-font">Mina Publiceringar</p>
+                <p class="menu-small-font">Historik</p>
+                <p class="menu-small-font">Logga ut</p>
+            </article>
+            <article class="menu-design setting-grid">Inställningar
                 <div id="settingspic">
-                    <img src="" alt="cogwheel">
+                    <img id="setting-icon" src="img/settings-24px.svg" alt="cogwheel">
+                    <hr class="main-line">
                 </div>
                 <div id="language">
-                    <p class="profile-setting-font">Språk för app</p>
+                    <p class="menu-small-font">Språk för app</p>
                     <img src="" alt="UKflag">
                     <img src="" alt="SWEflag">
                 </div>
                 <div id="notifs">
-                    <p class="profile-setting-font">Notifikationer</p>
-                    <label class="switch">
+                    <p class="menu-small-font">Notifikationer</p>
+                    <label class="switch switch-margin">
                             <input type="checkbox">
                             <span class="slider round"></span>
                     </label>
                 </div>
+                <!--
                 <div id="show-nsfw">
-                    <p class="profile-setting-font">Visa NSFW</p>
+                    <p class="menu-small-font">Visa NSFW</p>
                     <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                     </label>
                 </div>
+                -->
                 <div id="darkmode">
-                    <p class="profile-setting-font">Mörkt läge</p>
-                    <label class="switch">
+                    <p class="menu-small-font">Mörkt läge</p>
+                    <label class="switch switch-margin switch2">
                             <input type="checkbox">
                             <span class="slider round"></span>
                     </label>
                 </div>
-            <article class="menu-design">Annat</article>
-            <p></p>
-            <p></p>
-            <p></p>
+            </article>
+
+            <article class="menu-design other-grid">Annat
+                <hr class="main-line">
+                <p class="menu-small-font">Avtal</p>
+                <p class="menu-small-font">Rapportera problem</p>
+                <p class="menu-small-font">Hjälp</p>
+         </article>
         </div>
+
         <div class="fade-layer"></div>
         <div class="MainNav">
             <nav class="navigation selected" id="firstnav">Alla Böcker</nav>
