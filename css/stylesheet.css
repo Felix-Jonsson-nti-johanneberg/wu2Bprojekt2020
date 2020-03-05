@@ -26,7 +26,7 @@ html, body {
 
 /* Sida 1 index css */
 /* Header css */
-#mainhead{
+.mainhead{
   grid-area: hd;
   display: flex;
   background-color: #272727;
@@ -50,6 +50,18 @@ html, body {
   flex: 1;
   width: 55px;
   height: 55px;
+}
+
+a:link{
+    color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
 }
 
  /* Menu js */
@@ -444,4 +456,30 @@ html, body {
     background-color: #716F6F;
     text-align: center;
 }
+
+/* boksummary css*/
+.container2{
+    display: grid;
+    overflow: scroll;
+    background-color: grey;
+    width: 100vw;
+    height: 150vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+    'hd' 
+    'art'
+    'div'
+    'art'
+    ;
+}
+
+.mainhead2{
+    grid-area: hed;
+}
+
+
+
+
+
 

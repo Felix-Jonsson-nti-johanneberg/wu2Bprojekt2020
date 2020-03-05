@@ -13,3 +13,4 @@ $(".navigation").click(function () {
     
     lastClicked = current;
 })
+
