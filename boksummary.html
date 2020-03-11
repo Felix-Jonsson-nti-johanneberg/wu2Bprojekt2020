@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container2">
-        <header class="mainhead">
+        <header class="boksummary-mainhead">
             <a href="index.html">
                 <img src="" alt="back">
             </a>
@@ -18,25 +19,45 @@
                 <img src="" alt="share">
             </a>        
         </header>
-        <div>
-            <header>
-                <h1>title</h1>
-                <h2>forfot</h2>
-                <img src="" alt="profile">
+        <div class="textbox1" id="boksummary-nav">
+            <header id="boksummary-second-header">
+                <h1 class="boksummary-h1">Title</h1>
+                <h2 class="boksummary-h2">Författare:</h2>
+                <section class="profile-button">
+                    <img class="test-person" src="img/maninpic.png" alt="profile">
+                    <p class="username">name nameson jr</p>
+                </section>
             </header>
-            <nav>
-                <img src="" alt="star">
-                <img src="" alt="three lines">
-                <img src="" alt="qsuarebok">
+            <nav id="nav-flex">
+                <img id="star" src="img/green_star_full-24px.svg" alt="star">
+                <img id="green-menu" src="img/green_menu-24px.svg" alt="three lines">
+                <img id="green-book" src="img/green_menu_book-24px.svg" alt="squarebook">
+                <section id="description">
+                    <p>Favorit</p>
+                    <p>Kapitel</p>
+                    <p>Börja Läs</p>
+                </section>
             </nav>
         </div>
-        <article>
-            <h3>summary</h3>
-            <p>text here</p>
+        <article class="textbox2" id="summary">
+            <h3 class="boksummary-h3">Sammanfattning</h3>
+            <p class="menu-small-font move-right">text here</p>
         </article>
-        <article>
-            <h4>cateorues</h4>
-            <p>stuff</p>
+        <article class="textbox3" id="catalog">
+            <h4 class="boksummary-h3" id="h4">Kapitel</h4>
+            <ul class="chapter-list">
+                <li>kapitel 1</li>
+                <li>kapitel 2</li>
+                <li>kapitel 3</li>
+                <li>kapitel 1</li>
+                <li>kapitel 2</li>
+                <li>kapitel 3</li>
+                <li>kapitel 1</li>
+                <li>kapitel 2</li>
+                <li>kapitel 3</li>
+                <li id="show-less">visa mindre</li>
+            </ul>
+            <p  class="show-button" id="show-more">visa mer</p>
         </article>
 
 

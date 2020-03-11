@@ -14,3 +14,16 @@ $(".navigation").click(function () {
     lastClicked = current;
 })
 
+$("#show-more").click(function () {
+    let list = document.querySelector(".chapter-list");
+    list.classList.toggle("show-all");
+    let viewmore = document.querySelector("#show-more");
+    viewmore.classList.toggle("remove-button");
+})
+
+$("#show-less").click(function () {
+    let list = document.querySelector(".chapter-list");
+    list.classList.toggle("show-all");
+    let returnbutton = document.querySelector("#show-more");
+    returnbutton.classList.toggle("remove-button");
+})
