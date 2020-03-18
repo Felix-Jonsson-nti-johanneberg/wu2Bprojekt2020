@@ -14,16 +14,34 @@ $(".navigation").click(function () {
     lastClicked = current;
 })
 
-$("#show-more").click(function () {
+$("#show-more-button").click(function () {
+    let overflow = document.querySelector(".chapter-list");
+    overflow.classList.toggle("show-overflow");
+
     let list = document.querySelector(".chapter-list");
-    list.classList.toggle("show-all");
-    let viewmore = document.querySelector("#show-more");
-    viewmore.classList.toggle("remove-button");
+    list.classList.toggle("list-height");
+
+    let removefirstbutton = document.querySelector("#show-more-button");
+    removefirstbutton.classList.toggle("remove-button1");
+
+    let gone = document.querySelector("#show-less-button");
+    gone.classList.toggle("remove-button2");   
 })
 
-$("#show-less").click(function () {
+$("#show-less-button").click(function () {
     let list = document.querySelector(".chapter-list");
-    list.classList.toggle("show-all");
-    let returnbutton = document.querySelector("#show-more");
-    returnbutton.classList.toggle("remove-button");
+    list.classList.toggle("show-overflow");
+
+    let morelist = document.querySelector(".chapter-list");
+    morelist.classList.toggle("list-height");
+
+    let gone = document.querySelector("#show-less-button");
+    gone.classList.toggle("remove-button1");
+
+    let returnbutton = document.querySelector("#show-more-button");
+    returnbutton.classList.toggle("remove-button1");
 })
+
+ 
+
+
