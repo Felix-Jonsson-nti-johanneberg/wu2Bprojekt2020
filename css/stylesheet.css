@@ -29,6 +29,7 @@ html, body {
 .mainhead{
   grid-area: hd;
   display: flex;
+  justify-content: space-between;
   background-color: #272727;
 }
 
@@ -37,19 +38,21 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
     color: white;
-    margin-left: 15vw;
+    margin-right: 5.5rem;
 }
 
 #menu{
     flex: 1;
-    width: 55px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 6rem;
+    margin-left: -0.5rem;
 }
 
 #search{
   flex: 1;
-  width: 55px;
-  height: 55px;
+  width: 3rem;
+  height: 3rem;
 }
 
 a:link{
@@ -94,7 +97,7 @@ a:visited{
     left: -65vw;
     transition: left 0.2s;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.6fr 0.2fr 1fr 1fr 0.8fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr 1fr 0.8fr;
     grid-template-areas: 
     'hdm hdm'
     'hdm2 hdm2'
@@ -127,6 +130,13 @@ a:visited{
 }
 
 /* first top menu css*/
+#test-person{
+    margin-top: 1rem;
+    height: 10vh;
+    width: auto;
+    border-radius: 50%;
+}
+
 .userpic{
     grid-area: hdm;
     display: flex;
@@ -141,20 +151,43 @@ a:visited{
     flex-direction: row;
     justify-content: space-around;
     margin-left: 24px;
+    margin-right: 20px;
 }
 
 #username{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .pic-margin{
     margin: auto;
 }
 
+#cake{
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    
+}
+
+#white_book{
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
 .info-header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: solid 1px white;
-    width: 150%;
+    width: 30%;
+}
+
+.info-header1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid 1px white;
+    width: 60%;
+    margin-left: 2vw;
 }
 
 .seperating-line{
@@ -176,13 +209,13 @@ a:visited{
 }
 
 #menu_outlined_person{
-    width: 2.5rem;
-    height: 2.5rem;
-    
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.8rem;
 }
 
 .menu-design{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -202,10 +235,26 @@ a:visited{
     margin-left: 20px;
 }
 
-.setting-icon{
-    width: 40px;
-    height: 40px;
+#setting-text-margin{
+    margin-bottom: -7rem;
 }
+
+#setting-icon{
+    width: 2rem;
+    height: 1.8rem;
+    margin-top: 1.3rem;
+}
+
+.language{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flag{
+    height: 1rem;
+    margin-top: 1rem;
+}
+
 
 #notifs{
     display: flex;
@@ -507,6 +556,7 @@ a:visited{
     
 }
 
+/* boxarna med text */
 .textbox1{
     color: white;
     border-style: solid;
@@ -733,7 +783,7 @@ a:visited{
 }
 
 
-/* 4th side */
+/* 4th side read */
 .container3{
     width: 100vw;
     height: auto;
@@ -791,4 +841,103 @@ a:visited{
     padding-bottom: 0.5rem;
     border-style: solid;
 }
+
+/* sida 5 search system */
+.container4{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-areas: 
+    'hd'
+    'nav'
+    'mn'
+}
+
+.search-feature{
+    grid-area: hd;
+    background-color: #272727;
+    display: grid;
+    grid-template-columns: 1fr 5.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'back search'
+}
+
+.search-back{
+    grid-area: back;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 0.65rem; 
+}
+
+#searchbar{
+    grid-area: search;
+}
+
+input[type=text]{
+    background-image: url('../img/white_search-24px.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+}
+
+::placeholder{
+    color: white;
+}
+
+input[type=text], select {
+    width: 98%;
+    padding: 1rem 1rem;
+    padding-left: 3.5rem;
+    margin-left: 1%;
+    margin-top: 0.4rem;
+    background-color: #5A5A5A;
+    color: white;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.recent-search{
+    grid-area: nav;
+    background-color: #333;
+}
+
+
+
+.history{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0rem 1rem 0rem 1rem;
+
+}
+  
+.scrollmenu a {
+    display: inline-block;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+  
+
+
+
+.all-genres{
+    grid-area: mn;
+}
+
 
