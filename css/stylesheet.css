@@ -1,12 +1,13 @@
 html, body {
     margin:0;
     padding:0;
+    scroll-behavior: smooth;
 }
 
 .container{
     display: grid;
     overflow: scroll;
-    background-color: black;
+    background-color: #272727;
     width: 100vw;
     height: 200vh;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,10 +31,10 @@ html, body {
   grid-area: hd;
   display: flex;
   justify-content: space-between;
-  background-color: #272727;
+  background-color: #1d1c1c;
 }
 
-#logo{
+.logo{
     flex: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
@@ -67,10 +68,194 @@ a:visited{
     background-color: transparent;
 }
 
- /* Menu js */
+/* Nav css */
+.MainNav{
+    grid-area: nav;
+    display: flex;
+}
+
+.navigation{
+    flex: 1;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 8px;
+    height: 60%;
+    border-color: #595959;
+    color: #FFFFFF;
+    background-color: #716F6F;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation.selected{
+    border-color: #75F561;
+    color: #75F561;
+    background-color: #504E4E;
+    transition: border-color 3s 0s ease;
+}
+
+#sorttext{
+    grid-area: nvv;
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-left: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 2px;
+    border-color: #504E4E;
+    margin-right: 15px;
+    margin-left: 35px;
+}
+
+/* Main css */
+/* Row 1 */
+.MainBokRow{
+    grid-area: mn;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+figure {
+    width: 6rem;
+    margin: auto;
+}
+
+.bok-cover1{
+  object-fit: none;
+  width: 6rem;
+  height: 7.5rem;
+}
+
+.main-link-bok{
+    margin: auto;
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+/* Row 2 */
+.MainBokRow2{
+    grid-area: mn2;
+    display: flex;
+    justify-content: space-around;   
+    margin-top: 2vh;
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
 
 
-.fade-layer{
+/* Row 3 */
+.MainBokRow3{
+    grid-area: mn3;
+    display: flex;
+    justify-content: space-around;   
+    margin-top: 2vh;
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+/* Row 4 */
+.MainBokRow4{
+    grid-area: mn4;
+    display: flex;
+    justify-content: space-around;   
+    margin-top: 2vh;
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+/* Row 5 */
+.MainBokRow5{
+    grid-area: mn5;
+    display: flex;
+    justify-content: space-around;   
+    margin-top: 2vh;
+}
+
+#bok1{
+    flex: 1;
+}
+
+#bok2{
+    flex: 1;
+}
+
+#bok3{
+    flex: 1;
+}
+
+
+/* Duplicera alla kommer ha samma struktur i mn*/
+.bok{
+    display: grid;
+    height: 25vh;
+    color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas: 
+    'img'
+    'h3'
+    ;
+}
+
+.titel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: small;
+    border-color: #595959;
+    background-color: #716F6F;
+    text-align: center;
+}
+
+
+ /* SideMenu js */
+
+
+ .fade-layer{
     position: fixed;
     top: 0;
     left: 0;
@@ -352,173 +537,6 @@ a:visited{
     margin-top: 1rem;
 }
 
-/* Nav css */
-.MainNav{
-    grid-area: nav;
-    display: flex;
-}
-
-.navigation{
-    flex: 1;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 8px;
-    height: 60%;
-    border-color: #595959;
-    color: #FFFFFF;
-    background-color: #716F6F;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.navigation.selected{
-    border-color: #75F561;
-    color: #75F561;
-    background-color: #504E4E;
-    transition: border-color 3s 0s ease;
-}
-
-#sorttext{
-    grid-area: nvv;
-    color: white;
-    text-align: left;
-    font-size: 1.2rem;
-    padding-left: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 2px;
-    border-color: #504E4E;
-    margin-right: 15px;
-    margin-left: 35px;
-}
-
-/* Main css */
-/* Row 1 */
-.MainBokRow{
-    grid-area: mn;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2vh;
-}
-
-#bok1{
-    flex: 1;
-}
-
-#bok2{
-    flex: 1;
-}
-
-#bok3{
-    flex: 1;
-}
-
-/* Row 2 */
-.MainBokRow2{
-    grid-area: mn2;
-    display: flex;
-    justify-content: space-around;   
-    margin-top: 2vh;
-}
-
-#bok1{
-    flex: 1;
-}
-
-#bok2{
-    flex: 1;
-}
-
-#bok3{
-    flex: 1;
-}
-
-
-/* Row 3 */
-.MainBokRow3{
-    grid-area: mn3;
-    display: flex;
-    justify-content: space-around;   
-    margin-top: 2vh;
-}
-
-#bok1{
-    flex: 1;
-}
-
-#bok2{
-    flex: 1;
-}
-
-#bok3{
-    flex: 1;
-}
-
-/* Row 4 */
-.MainBokRow4{
-    grid-area: mn4;
-    display: flex;
-    justify-content: space-around;   
-    margin-top: 2vh;
-}
-
-#bok1{
-    flex: 1;
-}
-
-#bok2{
-    flex: 1;
-}
-
-#bok3{
-    flex: 1;
-}
-
-/* Row 5 */
-.MainBokRow5{
-    grid-area: mn5;
-    display: flex;
-    justify-content: space-around;   
-    margin-top: 2vh;
-}
-
-#bok1{
-    flex: 1;
-}
-
-#bok2{
-    flex: 1;
-}
-
-#bok3{
-    flex: 1;
-}
-
-
-/* Duplicera alla kommer ha samma struktur i mn*/
-.bok{
-    display: grid;
-    height: 25vh;
-    color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr;
-    grid-template-areas: 
-    'img'
-    'h3'
-    ;
-}
-
-.titel{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8px;
-    font-size: small;
-    border-color: #595959;
-    background-color: #716F6F;
-    text-align: center;
-}
 
 /* boksummary css*/
 .container2{
@@ -528,7 +546,7 @@ a:visited{
     width: 100vw;
     height: 150vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.5fr 1.2fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr 1.2fr 1.5fr;
     grid-template-areas: 
     'hd' 
     'div'
@@ -540,6 +558,8 @@ a:visited{
     display: flex;
     grid-area: hd;
     justify-content: space-between;
+    background-image: url(../img/city.jpg);
+    background-size: 100vw 15rem;
 }
 
 #white_share{
@@ -562,7 +582,7 @@ a:visited{
     border-style: solid;
     background-color: #5A5A5A;
     border-color: #949494;
-    margin-top: 2rem;
+    margin-top: -6rem;
     margin-right: 1rem;
     margin-left: 1rem; 
 }
@@ -807,6 +827,7 @@ a:visited{
     margin-right: 1rem;
     margin-top: 2rem;
     margin-bottom: -1.2rem;
+    
 }
 
 .smaller-title{
@@ -826,7 +847,11 @@ a:visited{
     margin-left: 2.5rem;
 }
 
-#textborder{
+.chapter-text{
+    grid-area: mn;
+}
+
+.textborder{
     color: white;
     background-color: #5A5A5A;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -835,12 +860,143 @@ a:visited{
     text-align: left;
     margin-left: 2rem;
     margin-right: 2rem;
-    padding-top: 1rem;
-    padding-left: 1.8rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    padding: 1rem 1rem 0.5rem 1.8rem;
     border-style: solid;
 }
+
+/* extra desktop element */
+
+.desktop-navtitles{
+    display: none;
+}
+
+input#searchbar.searchbar-nav{
+    display: none;
+}
+
+.aside-right{
+    display: none;
+}
+
+
+@media screen and (min-width: 1200px){
+
+    .container3{
+        display: grid;
+        height: auto;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #464852;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 8fr;
+        grid-template-areas: 
+        'nav nav'
+        'main as'
+    }
+
+    .desktop-nav{
+        grid-area: nav;
+        display: flex;
+        height: 11vh;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #333;
+    }
+
+    .desktop-navtitles{
+        display: flex;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: large;
+    }
+
+    input#searchbar.searchbar-nav{
+        display: grid;
+        width: 30vw;
+        margin-left: 15vw;
+    }
+
+    .chapter-text{
+        grid-area: main;
+    }
+
+    .textborder{
+        display: grid;
+        height: auto;
+        grid-area: main;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        'nav'
+        'mn'
+    }
+
+    .aside-right{
+        display: grid;
+        grid-area: as 
+    }
+
+    .aside-grid{
+        display: grid;
+        height: 40vh;
+        width: 20vw;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'hd'
+        'sec'
+    }
+
+    .aside-border{
+        grid-area: hd;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #333;
+        height: 5vh;
+        margin-bottom: -8vh;
+    }
+    
+    p.aside-border{
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+    .add-img{
+        grid-area: sec;
+        margin-top: -1vh;
+        background-color: #333;
+        list-style: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .add-img li{
+        margin-top: 1.2rem;
+        text-decoration: underline;
+    }
+
+    /* extra mobil element */
+    .white_backarrow{
+        display: none;
+    }
+
+    .big-title{
+        display: none;
+    }
+
+    .smaller-title{
+        display: none;
+    }
+
+    .smallest-info{
+        display: none;
+    }
+
+}
+
 
 /* sida 5 search system */
 .container4{
@@ -885,6 +1041,7 @@ input[type=text]{
 
 ::placeholder{
     color: white;
+    font-size: 1rem;
 }
 
 input[type=text], select {
@@ -901,14 +1058,21 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+/* Historik */
+
 .recent-search{
     grid-area: nav;
+    display: grid;
     background-color: #333;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'h1'
+    'nav'
 }
 
-
-
 .history{
+    grid-area: h1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size: 1.2rem;
@@ -917,10 +1081,10 @@ input[type=text], select {
 }
 
 .scrollmenu {
+    grid-area: nav;
     overflow: auto;
     white-space: nowrap;
     margin: 0rem 1rem 0rem 1rem;
-
 }
   
 .scrollmenu a {
@@ -931,13 +1095,41 @@ input[type=text], select {
     padding: 0.5rem;
     border: 2px solid #ccc;
     border-radius: 4px;
+    margin: 0rem 0.5rem 0rem 0.5rem;
 }
   
-
-
-
+/* sök på genre  */
 .all-genres{
     grid-area: mn;
+    background-color: #333;
 }
+
+#genre-margin{
+    margin-top: 1.5rem;
+}
+
+.genre-list{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    padding-left: 1.2rem;
+}
+
+.genre-list li{
+    margin-top: 1rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1.5px solid #5A5A5A;
+}
+
+#last-list-item{
+    border: none;
+}
+
+
+
+
+
+
+
 
 
