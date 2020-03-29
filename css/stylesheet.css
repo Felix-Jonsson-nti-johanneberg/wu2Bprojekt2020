@@ -251,9 +251,48 @@ figure {
     text-align: center;
 }
 
+/* desktop elements ivägen*/
+
+.Latest-title{
+    display: none;
+}
+
+.popular-title{
+    display: none;
+}
+
+.bok-highlight{
+    display: none;
+}
+
+.under-text{
+    display: none;
+}
+
+.titel-biggerbox{
+    display: none;
+}
+
+.bok-cover-side{
+    display: none;
+}
 
 @media screen and (min-width: 1200px){
     
+    .container{
+        display: grid;
+        background-color: #464852;
+
+        width: 100%;
+        height: 170vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
+        grid-template-areas: 
+        'nav'
+        'sec'
+        'sec2'
+    }
+
     .desktop-nav{
         grid-area: nav;
         display: flex;
@@ -263,7 +302,124 @@ figure {
         background-color: #333;
     }
 
+    .Latest-title{
+        display: grid;
+        grid-area: sec;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 6.5rem;
+        margin-top: 9rem;
+        height: 5vh;
+        width: 17vw;
+        border-bottom: solid 2px white;
+    }
 
+    .MainBokRow{
+        grid-area: sec;
+        margin-right: 12rem;
+        margin-left: -4rem;
+    }
+
+    .bok-cover1{
+        height: 35vh;
+        width: 25vw;   
+    }
+
+    .titel{
+        display: grid;
+        border-radius: 0em;
+        height: 2rem;
+        border-top: none;
+        padding-top: 0.5rem;
+        font-size: larger;
+    }
+
+    .popular-grid{
+        display: grid;
+        grid-area: sec2;
+        width: 100%;
+        height: 40vh;
+        margin-top: 9rem;
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: 0.22fr 1fr;
+        grid-template-areas: 
+        'h3 img'
+        'fig img'
+    }
+
+    .popular-title{
+        display: grid;
+        grid-area: h3;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 6.5rem;
+        margin-top: -2rem;
+        height: 5vh;
+        width: 8.5vw;
+        border-bottom: solid 2px white;
+    }
+
+    .bok-fig{
+        display: grid;
+        grid-area: fig;
+        height: 25vh;
+        margin-left: 6rem;
+        margin-top: -2rem;
+        color: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 1fr;
+        grid-template-areas: 
+        'img'
+        'h3'
+    }
+
+    .bok-highlight{
+        display: grid;
+        grid-area: img;
+        object-fit: none;
+        height: 20vh;
+    }
+
+    .titel-biggerbox{
+        display: grid;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-style: solid;
+        border-width: 2px;
+        height: 20vh;
+        border-radius: 0px;
+        border-top: none;
+        padding-top: 0.5rem;
+        font-size: larger;
+        border-color: #595959;
+        background-color: #716F6F;
+        text-align: center;
+    }
+
+    .under-text{
+        display: grid;
+        border-top: solid;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 12px;
+        font-size: medium;
+    }
+
+    .cover-side{
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: img;
+    }
+   
+    .bok-cover-side{
+        display: grid;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        height: 18vh;
+        width: 14vw;
+    }
+
+
+ /* mobil element*/
     .mainhead{
         display: none;
     }
@@ -273,6 +429,22 @@ figure {
     }
 
     .sorttext{
+        display: none;
+    }
+
+    .MainBokRow2{
+        display: none;
+    }
+
+    .MainBokRow3{
+        display: none;
+    }
+
+    .MainBokRow4{
+        display: none;
+    }
+
+    .MainBokRow5{
         display: none;
     }
 }
@@ -570,7 +742,7 @@ figure {
     display: grid;
     overflow: scroll;
     background-color: #272727;
-    width: 100%;
+    width: 100vw;
     height: 150vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 1.5fr 1.2fr 1.5fr;
@@ -845,6 +1017,7 @@ figure {
         display: grid;
         height: 150vh;
         width: 100%;
+        background-color: #464852;
         overflow: scroll;
         grid-template-columns: 1fr;
         grid-template-rows: 40vh 2fr 2fr 3fr;
@@ -923,6 +1096,7 @@ figure {
     }
 
     .genre-border{
+        display: flex;
         border: solid;
         background-color: #333;
         padding: 0.8rem;
@@ -1341,3 +1515,129 @@ input[type=text], select {
     border: none;
 }
 
+/*Profil css sida 5*/
+.container5{
+    display: grid;
+    width: 100%;
+    height: 120vh;
+    background-color: #464852;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 3fr 1fr 3fr 1fr 3fr;
+    grid-template-areas: 
+    'hd'
+    'main'
+    'h1'
+    'sec1'
+    'h2'
+    'sec2'
+}
+
+.header-flex{
+    display: flex;
+    grid-area: hd;
+    background-color: #272727;
+}
+
+.logohd{
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+
+.white_backarrow{
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+}
+
+.profile-main{
+    grid-area: main;
+}
+
+.profilepic-main{
+    height: 16vh;
+    margin-top: 1rem;
+}
+
+.titelprofile{
+    width: 6.7rem;
+    color: white;
+}
+
+.publication{
+    width: 160px;
+    color: white;
+    margin-left: 2rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+
+.cards{
+    flex: 0 0 auto;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.img-size{
+    width: 13rem;
+    margin-right: 1rem;
+}
+
+.publication-font{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 50%;
+    width: 7rem;
+}
+
+.friends{
+    width: 5rem;
+    margin-right: 50%;
+}
+
+.friend-pic{
+    height: 12vh;
+    margin-right: 2rem;
+}
+
+
+.desktop-nav{
+    display: none;
+}
+
+@media screen and (min-width: 1200px){
+
+
+
+
+    
+    .desktop-nav{
+        display: flex;
+    }
+
+    .header-flex{
+        display: none;
+    }
+
+    .publication{
+        display: none;
+    }
+
+    .profilepic-main{
+        display: none;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .titelprofile{
+        display: none;
+    }
+
+}

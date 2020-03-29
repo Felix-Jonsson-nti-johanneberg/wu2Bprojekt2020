@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hem</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -14,7 +14,7 @@
         <nav class="desktop-nav">
             <a href="index.html"> <h1 class="desktop-navtitles">Logo</h1></a> 
             <h2 class="desktop-navtitles">Favorites</h2>
-            <h3 class="desktop-navtitles">Log in</h3>
+            <a href="Profile.html"><h3 class="desktop-navtitles">Profil</h3></a>
             <h4 class="desktop-navtitles">Register</h4>
             <div class="search-box">
                 <form action="">
@@ -26,19 +26,20 @@
         <header class="mainhead">
             <img id="menu" src="img/white_menu-24px.svg" alt="meny">
             <h1 class="logo">Logo</h1>
-           <a href="Search.html"><img id="search" src="img/white_search-24px.svg" alt="search"></a> 
+           <a href="Search.html"><img id="search" src="img/white_search-24px.svg" alt="Sök"></a> 
         </header>
+        <!--Sido meny-->
         <div class="menu">
             <header class="userpic">
                 <div class="top-menu-margin">
-                    <img id="test-person" src="img/maninpic.png" alt="userpic">
+                   <a href="Profile.html"><img id="test-person" src="img/maninpic.png" alt="användarbild"></a> 
                     <p id="username">Name</p>
                 </div>
                 <hr class="upper-line">
             </header>
             <div class="top-info">
                 <p class="info-header">03/01</p>
-                <img id="cake" src="img/white-cake-24px.svg" alt="smallcake">
+                <img id="cake" src="img/white-cake-24px.svg" alt="tårta">
                 <hr class="seperating-line">
                 <p class="info-header1">101 Lästa</p>
                 <img id="white_book" src="img/white_menu_book-24px.svg" alt="book">
@@ -46,7 +47,7 @@
             <article class="menu-design profile-grid">
                 <div class="menu-profile-flex">
                     <h2 class="menu-design">Profil</h2>
-                    <img id="menu_outlined_person" src="img/person_outline-24px.svg" alt="guy">
+                    <img id="menu_outlined_person" src="img/person_outline-24px.svg" alt="person">
                 </div>
                 <hr class="main-line margin-line">
                 <p class="menu-small-font">Mina Publiceringar</p>
@@ -56,13 +57,13 @@
             <article class="menu-design setting-grid">
                 <div class="menu-profile-flex">
                     <h3 class="menu-design" id="setting-text-margin">Inställningar</h3>
-                    <img id="setting-icon" src="img/white-settings-24px.svg" alt="cogwheel">
+                    <img id="setting-icon" src="img/white-settings-24px.svg" alt="inställningar hjul">
                 </div>
                 <hr class="main-line">
                 <div class="language">
                     <p class="menu-small-font">Språk för app</p>
-                    <img class="flag" src="img/swedish-flag.jpeg" alt="SWEflag">
-                    <img class="flag" src="img/Flag_of_the_United_Kingdom.svg" alt="UKflag">
+                    <img class="flag" src="img/swedish-flag.jpeg" alt="SWEflagga">
+                    <img class="flag" src="img/Flag_of_the_United_Kingdom.svg" alt="UKflagga">
                 </div>
                 <div id="notifs">
                     <p class="menu-small-font">Notifikationer</p>
@@ -92,24 +93,43 @@
             <nav class="navigation" id="secondnav">Favoriter</nav>
             <nav class="navigation" id="thirdnav">Senaste</nav>
         </div>
-
-        <h2 class="sorttext">Sortera:</h2> 
+        <!-- slut av meny -->
+       <h2 class="Latest-title">Senaste uppdaterade</h2>
         <main class="MainBokRow"> 
             <a class="main-link-bok" href="boksummary.html">
                 <figure class="bok">
-                    <img class="bok-cover1" src="img/city.jpg" alt="bild av bok1">
+                    <img class="bok-cover1" src="img/city.jpg" alt="stad">
                     <figcaption class="titel">titel av bok1</figcaption>
                 </figure>
             </a>
             <figure class="bok">
-                <img class="bok-cover1" src="img/fish.jpg" alt="bild av bok1">
+                <img class="bok-cover1" src="img/fish.jpg" alt="fisk">
                 <figcaption class="titel">titel av bok2</figcaption>
             </figure>
             <figure class="bok">
-                <img class="bok-cover1" src="img/flower.jpg" alt="bild av bok1">
+                <img class="bok-cover1" src="img/flower.jpg" alt="blomma">
                 <figcaption class="titel">titel av bok3</figcaption>
             </figure>
         </main>
+        <div class="popular-grid">
+            <h3 class="popular-title">Populäraste</h3>
+            <figure class="bok-fig">
+                <img class="bok-highlight" src="img/city.jpg" alt="stad">
+                <figcaption class="titel-biggerbox">titel av bok1
+                    <p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ipsum eu lacus fermentum pharetra. In iaculis urna vel justo molestie.</p>
+                </figcaption>
+            </figure>
+            <div class="cover-side">
+                <img class="bok-cover-side" src="img/flower.jpg" alt="blomma">
+                <img class="bok-cover-side" src="img/fish.jpg" alt="fisk">
+                <img class="bok-cover-side" src="img/city.jpg" alt="stad">
+                <img class="bok-cover-side" src="img/flower.jpg" alt="blomma">
+                <img class="bok-cover-side" src="img/fish.jpg" alt="fisk">
+                <img class="bok-cover-side" src="img/city.jpg" alt="stad">
+                <img class="bok-cover-side" src="img/flower.jpg" alt="blomma">
+                <img class="bok-cover-side" src="img/fish.jpg" alt="fisk">
+            </div>
+        </div>        
         <main class="MainBokRow2">
             <a class="main-link-bok" href="boksummary.html">
                 <figure class="bok">
