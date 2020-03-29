@@ -1600,24 +1600,166 @@ input[type=text], select {
     margin-right: 50%;
 }
 
+.gallery-friend{
+    display: flex;
+    grid-area: sec2;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 .friend-pic{
     height: 12vh;
     margin-right: 2rem;
 }
 
+.friends-font{ 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 5rem;
+    margin-left: 2.5rem;
+}
 
+
+/*desktop element*/
 .desktop-nav{
+    display: none;
+}
+
+.profile-borders{
+    display: none;
+}
+
+.h1-flex{
+    display: none;
+}
+
+.pic-center{
+    display: none;
+}
+
+.made-border{
+    display: none;
+}
+
+.desktop-gallery{
+    display: none;
+}
+
+.profile-main-desktop{
     display: none;
 }
 
 @media screen and (min-width: 1200px){
 
+    .container5{
+        display: grid;
+        height: 150vh;
+        width: 100%;
+        grid-template-rows: 0vh 1fr 0fr 0fr 0fr 0fr;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
+    .profile-main-desktop{
+        display: grid;
+        width: 80%;
+        grid-area: main;
+        margin-top: 5rem;
+        margin-right: 3rem;
+        margin-left: 8rem;
+        background-color: #5A5A5A;
+        border: solid 3px #949494;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
+        grid-template-areas: 
+        'as hd'
+        'as sec1'
+        'as sec2'
+    }
 
+    .profile-aside{
+        grid-area: as;
+        padding-left: 2.5rem;
+        margin: 1rem 3rem 1rem 0rem;
+        border-right: white solid;
+    }
 
-    
+    .h1-flex{
+        display: grid;
+        margin-top: 0.5rem;
+        border-bottom: solid;
+        width: 110px;
+    }
+
+    .pic-center{
+        display: grid;
+        padding-left: 15px;
+    }
+
+    .info-border{
+        display: grid;
+        border: solid 3px #949494;
+        margin-right: 2.5rem;
+        padding-left: 22px;
+    }
+
+    .made-border{
+        display: grid;
+        border-bottom: solid;
+        padding-bottom: 1rem;
+        margin-right: 20px;
+        width: 60px;
+    }
+
+    #p-bottom-border{
+        border-bottom: solid;
+        padding-bottom: 10rem;
+        margin-right: 3rem;
+    }
+
+    .profile-grid2{
+        display: grid;
+        grid-area: sec1;
+    }
+
+    .profile-grid3{
+        display: grid;
+        grid-area: sec2;
+    }
+
+    .profile-borders{
+        display: grid;
+        font-size: x-large;
+        margin-bottom: -5rem;
+    }
+
+    .desktop-gallery{
+        display: grid;
+    }
+
+    .gallery{
+        display: flex;
+        width: 90%;
+    }
+   
+    .profile-show-all{
+        margin-left: 720px;
+        height: 2rem;
+        margin-right: 2rem;
+    }
+
     .desktop-nav{
         display: flex;
+    }
+
+
+    /* mobil element */
+    .profile-main{
+        display: none;
     }
 
     .header-flex{
@@ -1632,12 +1774,193 @@ input[type=text], select {
         display: none;
     }
 
-    .gallery{
-        display: none;
-    }
-
     .titelprofile{
         display: none;
     }
 
+    .friends-font{
+        display: none;
+    }
+
+}
+
+/*Settings sista sida*/
+
+.settings-background{
+    background-color: #464852;
+    height: 110vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 11vh 1fr;
+    grid-template-areas: 
+    'hd'
+    'main'
+}
+
+.container6{
+    display: grid;
+    grid-area: main;
+    height: 80%;
+    width: 80%;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    border: solid 3px #949494;
+    background-color: #5A5A5A;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas: 
+    'as sec1'
+    'as sec2'
+}
+
+.settings-border{
+    font-size: xx-large;
+    padding-left: 100px;
+    padding-top: 60px;
+    border-right: solid;
+    border-color: #949494;
+    background-color: #464852;
+}
+
+#aside-bottomborder{
+    border-bottom: solid;
+    border-color: #949494;  
+}
+
+.settings-section1{
+    display: grid;
+    height: 35vh;
+    grid-area: sec1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-areas: 
+    'sc'
+    'sc2'
+    'fig'
+}
+
+.settings-username{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid;
+    border-color: #949494;
+}
+
+.profile-p{
+    font-size: x-large;
+    margin-left: 1rem;
+}
+
+.settings-username input[type=text]{
+    background-color: #464852;
+    border: 1px solid #ccc;
+    background-image: none;
+    margin-left: 6rem;
+    margin-top: 18px;
+}
+
+#email-margin{
+    margin-right: 6.6rem;
+}
+
+.settings-avatar{
+    display: flex;
+    grid-area: fig;
+}
+
+.settings-figure{
+    padding-top: 2rem;
+}
+
+.figure-border{
+    border: solid;
+    border-color: #949494;
+    padding: 20px;
+    margin-bottom: -4rem;
+    width: 8rem;
+    border-radius: 4px;
+    background-color: #464852;
+
+}
+
+.maninpic-size{
+    width: 10.6rem;
+}
+
+#avatar-margin{
+    padding-top: 6rem;
+}
+
+.settings-apperance{
+    display: grid;
+    border-top: solid #949494;
+    margin-top: -3px;
+    grid-area: sec2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'sec3'
+    'sec4'
+}
+
+@media screen and (min-width: 1200px){
+
+    .settings-language{
+        display: flex;
+        justify-content: space-evenly;
+        grid-area: sec3;
+        border-bottom: solid #949494;
+        padding-top: 2rem;
+    }
+
+    .settings-darkmode{
+        justify-content: flex-start;
+        display: flex;
+        grid-area: sec4;
+        padding-top: 2rem;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 41px;
+        width: 40px;
+        left: 2px;
+        bottom: 1px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(49px);
+      }
+
+      .flag{
+          margin-top: 20px;
+          height: 40px;
+      }
+        
+      #language-margin{
+        margin-right: 20rem;
+    }
+
+      #darkmode-margin{
+          margin-right: 22rem;
+      }
+    
+      #off-margin{
+          padding-right: 1rem;
+      }
 }

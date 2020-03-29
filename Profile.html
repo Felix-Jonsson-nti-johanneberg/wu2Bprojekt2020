@@ -9,6 +9,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <nav class="desktop-nav">
+        <a href="index.html"> <h1 class="desktop-navtitles">Logo</h1></a> 
+        <h2 class="desktop-navtitles">Favorites</h2>
+        <a href="Profile.html"><h3 class="desktop-navtitles">Profil</h3></a>
+        <h4 class="desktop-navtitles">Register</h4>
+        <div class="search-box">
+            <form action="">
+                <input type="text" class="searchbar-nav" id="searchbar" name="Sök" placeholder="Sök"> 
+            </form>
+        </div>
+        <a href="settings.html"><h5 class="desktop-navtitles">Inställningar</h5></a>
+    </nav>
     <div class="container5">
         <header class="header-flex">
             <a href="javascript:history.back()"><img class="white_backarrow" src="img/white_arrow_back-24px.svg" alt="tillbaka pil"></a>
@@ -39,26 +51,58 @@
                 <figcaption class="publication-font">kreativt namn2</figcaption>
             </figure>
         </section>
-        <h3 class="boksummary-h3 friends publication">Vänner</h3>
-        <section class="gallery">
-            <img class="friend-pic" src="img/maninpic.png" alt="vän 1">
-            <img class="friend-pic" src="img/maninpic.png" alt="vän 2">
-            <img class="friend-pic" src="img/maninpic.png" alt="vän 3">
-            <img class="friend-pic" src="img/maninpic.png" alt="vän 4">
-            <img class="friend-pic" src="img/maninpic.png" alt="vän 5">
-        </section>
-        <nav class="desktop-nav">
-            <a href="index.html"> <h1 class="desktop-navtitles">Logo</h1></a> 
-            <h2 class="desktop-navtitles">Favorites</h2>
-            <a href="Profile.html"><h3 class="desktop-navtitles">Profil</h3></a>
-            <h4 class="desktop-navtitles">Register</h4>
-            <div class="search-box">
-                <form action="">
-                    <input type="text" class="searchbar-nav" id="searchbar" name="Sök" placeholder="Sök"> 
-                </form>
-            </div>
-            <h5 class="desktop-navtitles">Settings</h5>
-        </nav>
+        <h3 class="boksummary-h3 friends-font">Vänner</h3>
+        <section class="gallery-friend">
+                <img class="friend-pic" src="img/maninpic.png" alt="vän 1">
+                <img class="friend-pic" src="img/maninpic.png" alt="vän 2">
+                <img class="friend-pic" src="img/maninpic.png" alt="vän 3">
+                <img class="friend-pic" src="img/maninpic.png" alt="vän 4">
+                <img class="friend-pic" src="img/maninpic.png" alt="vän 5">
+            </section>
+        <main class="profile-main-desktop">
+            <aside class="profile-aside">
+                <h1 class="h1-flex">Ett namn</h1>
+                <img class="pic-center" src="img/maninpic.png" alt="Profil bild">
+                <div class="info-border">
+                    <p class="made-border">Skapdes: 01/01</p>
+                    <p>Läst: 100 böcker</p>
+                </div>
+            </aside>
+            <p id="p-bottom-border">Skriv om dig själv</p>
+            <section class="desktop-gallery" class="profile-grid2">
+            <h2 class="profile-borders">Dina publiceringar</h2>
+              <section class="gallery">
+                        <figure class="cards"> 
+                            <img class="img-size" src="img/city.jpg" alt="första bok">
+                            <figcaption class="publication-font">hello</figcaption>
+                        </figure>
+                        <figure class="cards"> 
+                           <a href="boksummary.html"><img  class="img-size" src="img/city.jpg" alt="andra bok"></a>
+                            <figcaption class="publication-font">hello</figcaption>
+                        </figure>
+                        <figure class="cards"> 
+                            <img class="img-size" src="img/city.jpg" alt="tredje bok">
+                            <figcaption class="publication-font">good bok</figcaption>
+                        </figure>
+                        <figure class="cards"> 
+                            <img class="img-size" src="img/city.jpg" alt="fjärde bok">
+                            <figcaption class="publication-font">kreativt namn2</figcaption>
+                        </figure>
+                    </section>
+                    <button class="profile-show-all">Visa alla</button>
+            </section>
+            <section class="profile-grid3"> 
+                <h3 class="profile-borders">Vänner</h3>
+                <section class="gallery">
+                    <img class="friend-pic" src="img/maninpic.png" alt="vän 1">
+                    <img class="friend-pic" src="img/maninpic.png" alt="vän 2">
+                    <img class="friend-pic" src="img/maninpic.png" alt="vän 3">
+                    <img class="friend-pic" src="img/maninpic.png" alt="vän 4">
+                    <img class="friend-pic" src="img/maninpic.png" alt="vän 5">
+                </section>
+                <button class="profile-show-all">Visa alla</button>
+            </section> 
+        </main>
     </div>
 </body>
 <script src="js/scripts.js"></script>
